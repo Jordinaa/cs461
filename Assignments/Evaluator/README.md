@@ -35,10 +35,8 @@ The first program of the semester involves route-finding using multiple algorith
 	listed comprehensively if your method requires that bidirectional connections be explicitly stated, you may need to generate additional pairs for the symmetrical connection to work. {That is, tell the program that it’s possible to go from listed A as adjacent to B or listed B as adjacent to A.}  
 	--> Be sure to take this into account when setting up your program’s data structures. If adjacency is listed  
 	in either direction, it should be considered present in both directions.  
-                    
 
 • Your program should:
-
 - Ask the user for their starting and ending towns, making sure they’re both towns in the database.
 - Ask them then to select the search method they wish to use to find a route to the destination.
     - If that route exists, the program should then print the route the method found in order, from origin to destination.
