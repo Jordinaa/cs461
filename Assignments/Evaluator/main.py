@@ -51,7 +51,7 @@ def main():
             print("Invalid selection. Please try again.")
             continue
 
-        # Display results
+        # results
         if path:
             print("\nPath found:")
             print(" -> ".join(path))
@@ -64,7 +64,7 @@ def main():
         else:
             print("No path found.")
 
-        # do another? 
+        # do another algo
         another = input("\nDo you want to perform another search? (y/n): ").strip()
         if another.lower() != 'y':
             print("Goodbye!")

@@ -1,0 +1,192 @@
+- pick out a list of terms
+	- its aspirational because its guidelines to build us towards a specific outcome which is an outcome related to self 
+	- more human cognitive a system becomes subjugating it to enslavement 
+
+# Chapter 1 
+- Artificial intelligence 
+	- the science of making machines do things that would require intelligence if done by humans 
+	- including cognitive process and action 
+	- react rationally and humanly 
+	- rational
+		- explain how you got your conclusion 
+		- sequence of steps that lead to your final conclusion 
+		- weak AI 
+			- when you have opaque sequence of steps to get to conclusion 
+---
+- strong AI
+	- Carnegie mellon
+	- system should be based on the same methods of learning and cognition used by humans
+	- none in existence
+- Weak AI
+	- MIT
+	- any system demonstrating intelligent behavior is AI regardless of how it achieves its end
+	- if the process used to obtain it is different than a human would use who cares 
+---
+- Procedural engines and replicate everything that exists 
+	- can pass a turing test
+	- but internal processes are so opaque we cannot understand it 
+	- thus we cannot include they are acting rationally 
+- Agents
+	- anything that can be viewed as perceiving its environment through sensors and acting on that environment through actuators 
+- percept
+	- limited to 
+	- the agents perceptual input at a given instant 
+- percept sequence
+	- rationalized to the sequence of what has happened beforehand and at current state 
+		- allows me to extrapolate to predict into the future
+	- complete history of percepts 
+	- choice of action can depend on percept or percept sequence but not on anything it has not observed yet 
+- agent functions
+	- does not base its actions on the environmental state
+	- only bases it on what has been perceived about the state
+	- implemented by an agent program
+	- can be viewed has a table lookup or set of if-then rules
+- genetic algorithms imply survivability which in turn provide an assessment of intelligence 
+---
+- turing test
+	- can an AI system communicating via text interface mimic a human well enough to convince someone that it's human
+	- i just need to convince you i am human
+	- does not need to think rationally 
+- objections to turing test
+	- machines don't have souls and thus cant be really intelligent 
+	- a machine cant do something truly surprisingly original
+		- machines have already surprised us with their capabilities
+		- this assumes that humans can immediately deduce all consequences of a given fact or action this simply isn't true 
+	- a machine will never for example make a human fall in love with it
+	- or appreciate beauty 
+- searless Chinese room
+	- users pass notes written in chinese under a door inside a human who does not know chinese looks them up in a series of complex rulebooks and writes out some other symbols which he does not understand and passes them back out under the door people reading these responses on the other side believe he is answering in chinese yet neither the person nor the rulebooks can be said to understand chinese 
+	- these rely on the idea that cannot deduce internal state purely from observing external behavior of a black box but we know from some situations that we can 
+- blocks
+	- objection text is stored in binary
+	- given a large enough database its possible to store a library of queries and plausible answers to mimc intelligence via table lookup 
+---
+- rationality 
+	- Inference in Uncertainty
+		- an AI can be **omnishent** where it is full and complete environment 
+		- infer something
+			- logically postulate the next rational step 
+			- natural wave exists and we create a model thats close to it but not exactly
+			- capacity of taking an existing model 
+	- rationality depends on:
+		- the performance **measure** that defines **success**
+		- the agents **knowledge** of the **environment**
+		- the **actions** the agent can perform
+		- the agents **percept sequence**
+	- for each possible percept sequence a rational agent should select an action that is expected to maximize its performance measure, given the evidence provided by the **percept sequence** and whatever **built in** **knowledge** the agent has
+- rational decisions
+- acting rationally 
+---
+- foundations of AI
+	- Neuroscience
+		- how do brains process information
+		- much more energy efficient than any CPU 
+	- psychology
+		- how do humans and animals think and act?
+	- computer engineering
+		- how can we build an efficient computer
+	- control theory and cybernetics
+		- how can artifacts operate under their own control
+			- homeostasis, objective function
+	- linguistics 
+		- how does language relate to thought
+---
+- heuristics
+	- AI often relies on heuristics which usually get correct answer at least approximately and do it quickly rather than algorithms  - which always get correct answer eventually
+		- solving a simple but related problem
+		- working backward from a solution toward the starting state
+		- identifying similar solved problems and testing those solutions
+		- successive approximation (iteration) - if we can't find a solution, can we find a state that is in some way "closer" 
+	- need because they are fast 
+	- has complexity increases there is a point in which it is impossible to do things like calculating an outcome 
+	- reducing down a massive numbers into a subset of those options
+	- reducing the search space within a reasonable subset 
+	- should never over estimate the cost of goal 
+- monotonic 
+	- is a function that doesn't have any concavity 
+	- always increasing in relative value
+	- has goal moves forward 
+		- should not move backwards 
+- compared to algorithms
+- definitions
+- kinds of heuristics
+---
+- algorithm vs heuristic 
+---
+- properties of heuristics 
+	- what should a heuristic never do
+	- monotonic heuristic 
+---
+- more informed search algorithm 
+	- searches what
+	- levels are more informed search algorithms 
+	- metrics should apply likely outcomes 
+	- travel to position 
+	- whatever one is closer to the goal 
+	- consistency should move closer to the goal 
+	- heuristics can switch positions based on goal 
+---
+- problems suitable for AI
+	- most AI problems are large 
+	- cannot be solved with a straightforward algorithm 
+	- embody (encapsulate / integrate) a large amount of human expertise - representation 
+	- operate in a dynamic enviroment 
+- what they require
+	- large amounts of data
+- what are they
+---
+- properties of environments
+- fully observable vs. partially observable vs unobservable 
+	- fully observable vs. partially observable
+		- can sensors detect all aspects of environmental relevant to the choice of action 
+			- may only be partially observable due to noise, distance, or inaccessibility 
+				- robot taxi can't tell what others drivers are thinking 
+	- unobservable 
+		- if there are no sensors at all the environment is unobservable 
+		- all is not lost we can still behave rationally and make certain deductions about our environment without sensors  
+		- inferences about previous belief state 
+- single agent vs multi agent
+	- is there more than one agent active in the environment? 
+		- is it an agent or a semi-random features of the environment
+		- is the other agent best described by assuming it's trying to maximize its own performance measure 
+		- agent can be recognized has the environment itself 
+	- cooperative vs competitive 
+		- communication and cooperation emerge as rational strategies in cooperative environments
+		- randomized behavior avoids predictability in competitive environments 
+- deterministic vs stochastic choices
+	- is the environments next or immediate state completely determined by the current state or state history and the action executed by the agent
+	- *a fully deterministic but only partially observable environment might seem stochastic*
+	- deterministic vs. non-deterministic 
+	- uncertain 
+- episodic vs sequential
+	- what matters
+	- memory constraints 
+		- if i dont need to know the sequence that led up to the state
+			- greedy in most cases
+		- episodic needed in a set of conditional outcomes determined by the instantaneous 
+- statics vs dynamic environments
+	- does the environment change while the agent is deliberating?
+		- if yes and an agent takes too long to decide it counts as a decision to do nothing 
+		- taxi driving is dynamic
+		- sudoku is static 
+	- semi-dynamic
+		- if the environment doesn't change with time but the performance score does the environment is semi dynamic 
+		- chess is semi dynamic
+- discrete vs continuous
+	- state and time
+		- how are state and time handled?
+			- discrete steps or continuous flow? 
+			- some sensors discretize a continuous property 
+			- some input is technically discrete but treated as continuous (digital video)
+	- moving through a system is discrete and environment 
+- known vs unknown 
+	- the agents or designers knowledge about the laws of physics related to a task
+	- in a known environment the outcomes or their probabilities of all actions are known
+	- an unknown environment must be explored or actions tried to see what effect they have
+	- a known environment can still be partially observable 
+		- a card playing agent cant see other players hands but know what game its playing 
+	- programmed in or learnable 
+---
+- more foundations of AI - where do we draw from? 
+---
+# Chapter 2

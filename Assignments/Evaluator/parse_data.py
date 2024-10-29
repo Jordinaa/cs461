@@ -11,9 +11,6 @@ class Location:
     def add_adjacency(self, adjacent_location):
         self.adjacencies.append(adjacent_location)
 
-    def __repr__(self):
-        return f"Location(name={self.name}, coordinates={self.coordinates}, adjacencies={[loc.name for loc in self.adjacencies]})"
-
 def parse_adjacencies(file_path):
     locations = {}
     with open(file_path, 'r') as f:
